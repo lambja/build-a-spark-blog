@@ -1,0 +1,355 @@
+
+
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+body {
+	background: url(../../concepts/JavaTechdegree_SparkBlog_1.jg) top center no-repeat;
+	font-size: 15px;
+	color: #31708E;
+	font-family: 'Noto Serif', Georgia, serif;
+	background: #444;
+}
+.container {
+	margin: 0 auto;
+	padding: 0;
+	background: #F7F9FB;
+}
+
+header .site-header {
+	border-bottom: 1px solid #d1d1d1;
+	margin: 0 auto;
+	height: 95px;
+	background: #444;
+}
+header .logo {
+	border: 5px solid #687864;
+	text-decoration: none;
+	color: #31708E;
+	font-size: 21px;
+	font-weight: bold;
+	padding: 5px 10px;
+	margin: 24px 0 0 24px;
+	float: left;
+	text-transform: uppercase;
+	font-family: 'Noto Sans', sans-serif;
+}
+header .new-entry {
+	float: right;
+	margin: 25px 25px 0 0;
+}
+footer {
+	background: #444;
+	height: 30px;
+	text-align: center;
+	padding: 35px 0;
+	color: #999;
+}
+footer a {
+	color: #31708E;
+	text-decoration: none;
+	border-bottom: 2px solid #687864;
+	padding-bottom: 1px;
+}
+
+
+/* ==========================================================================
+   Button Styles
+   ========================================================================== */
+
+.button {
+	padding: 8px 12px 7px 12px;
+	text-transform: uppercase;
+	background: #31708E;
+	border: 3px solid #31708E;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #F7F9FB;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: 'Noto Sans', sans-serif;
+}
+.button.button-secondary {
+	background: transparent;
+	border-color: #31708E;
+	color: #31708E;
+}
+.button.button-round {
+	border-radius: 100px;
+	padding: 9px;
+	line-height: 1px;
+}
+.button:focus {
+	outline: 0;
+}
+
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+h1 {
+	font-size: 44px;
+	margin-bottom: 12px;
+	color: #31708E;
+}
+h2 {
+	font-size: 28px;
+	color: #31708E;
+}
+h3 {
+	font-size: 28px;
+	color: #31708E;
+}
+p {
+	font-size: 15px;
+	line-height: 1.8em;
+	color: #31708E;
+}
+p a {
+	border-bottom: 2px solid #687864;
+	padding: 0;
+}
+a.link {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-bottom: 1px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+/* ==========================================================================
+   Page Styles
+   ========================================================================== */
+
+.entry-list,
+.edit-entry,
+.new-entry,
+.password {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 90px 0 100px 0;
+}
+.edit-entry h2,
+.new-entry h2,
+.password h2 {
+	margin-bottom: 35px;
+}
+.entry-list article {
+	margin-bottom: 70px;
+	text-align: center;
+}
+.entry-list article:last-child {
+	margin-bottom: 5px;
+}
+.entry-list article h2 {
+	margin-bottom: 8px;
+}
+.entry-list article a {
+	text-decoration: none;
+	color: #31708E;
+}
+.entry-list time {
+	color: #687864;
+}
+.entry-list.single {
+	padding-bottom: 30px;
+}
+.entry-list.single time {
+	font-size: 18px;
+}
+.entry {
+	max-width: 700px;
+	margin: 75px auto 0 auto;
+	text-align: left;
+}
+.entry p {
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+.entry-comments {
+	background: #f1f1f1;
+	padding: 70px 0;
+}
+.entry-comments .container {
+	background: transparent;
+}
+.entry-comments .container,
+.edit-entry .container,
+.new-entry .container {
+	max-width: 700px;
+	margin: 0 auto;
+}
+.entry-comments h2 {
+	border-bottom: 1px solid #c1c1c1;
+	padding-bottom: 35px;
+}
+.comment {
+	border-top: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+	padding: 35px 0 20px;
+	margin: 2px 0 0 0;
+}
+.comment time {
+	display: block;
+	color: #687864;
+	font-size: 14px;
+	margin: 3px 0 20px 0;
+}
+.new-comment .container {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+
+
+/* ==========================================================================
+   Form Styles
+   ========================================================================== */
+
+
+.entry-comments form {
+	border-top: 1px solid #c1c1c1;
+	padding: 50px 0;
+	margin-top: 2px;
+}
+form label {
+	display: block;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 5px;
+	color: #31708E;
+}
+form input[type=text],
+form input[type=password],
+form textarea {
+	border: 2px solid #e1e1e1;
+	font-size: 18px;
+	line-height: 1.8em;
+	padding:10px 13px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+	width: calc(100% - 32px);
+}
+.new-comment form input[type=text],
+.new-comment form textarea {
+	font-size: 15px;
+}
+form input[type=text]:focus,
+form input[type=password]:focus,
+form textarea:focus {
+	outline: 0;
+	border-color: #b1b1b1;
+}
+form input[type=text]:hover,
+form textarea:hover {
+	border-color: #b1b1b1;
+}
+.new-comment form textarea {
+	min-height: 125px;
+}
+.edit-entry form textarea,
+.new-entry form textarea {
+	min-height: 400px;
+}
+input[type=submit] {
+	margin-right: 5px;
+}
+
+
+/* ==========================================================================
+   Tag Styles
+   ========================================================================== */
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.tags li {
+  float: left;
+}
+
+.tag {
+  background: #687864;
+  border-radius: 3px 0 0 3px;
+  color: #F7F9FB;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag input{
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #687864;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: #31708E;
+  color: white;
+}
+
+.tag:hover::after {
+   border-left-color: #31708E;
+}
+
+.wrapper {
+   text-align: center;
+}
+
+.wrapper ul {
+        display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+

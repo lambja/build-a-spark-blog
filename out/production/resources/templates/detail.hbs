@@ -1,0 +1,51 @@
+{{#partial "content"}}
+    <section>
+        <div class="container">
+            <div class="entry-list single">
+                <article>
+                    <h1>{{blogEntry.title}}</h1>
+                    <time datetime="2016-01-31 1:00">{{blogEntry.date}}</time>
+                    <div class="entry">
+                        <p>{{blogEntry.entry}}</p>
+                        <ul class="tags">
+                            {{#each blogEntry.tags}}
+                                <li>
+                                    <form class="tag" action="/tag" method="get">
+                                        <input type="hidden" name="tag" value="{{this}}"/>
+                                        <input type="submit" value="{{this}}">
+                                    </form>
+                                </li>
+                            {{/each}}
+                        </ul>
+                        <p><a class="link" href="/detail/{{blogEntry.slug}}/edit">Edit Entry</a></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="entry-comments">
+        <div class="container">
+            <h2>Comments</h2>
+
+            {{#each blogEntry.comments}}
+            <div class="comment">
+                <strong>{{name}}</strong>
+                <time datetime="2016-01-31 1:00">{{date}}</time>
+                <p>{{comment}}</p>
+            </div>
+            {{/each}}
+            <div class="new-comment">
+                <form action="/detail/{{blogEntry.slug}}" method="post">
+                    <label for="name"> Name</label>
+                    <input type="text" name="name"><br>
+                    <label for="comment">Comment</label>
+                    <textarea rows="5" name="comment" required></textarea>
+                    <input type="submit" value="Post Comment" class="button">
+                </form>
+            </div>
+        </div>
+    </section>
+{{/partial}}
+
+{{> base.hbs}}
