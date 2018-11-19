@@ -1,7 +1,3 @@
-# build-a-spark-blog
-Techdegree Project 4
-
-
 # Techdegree Project 4
 
 Build a Blog with Spark | Written in Java & Spark
